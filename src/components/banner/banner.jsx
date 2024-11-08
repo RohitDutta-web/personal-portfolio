@@ -4,10 +4,10 @@ import HyperText from "../ui/hyper-text";
 export function Banner() {
   return (
     <>
-      <div className="relative flex h-screen w-full items-center justify-center overflow-hidden  bg-background p-20   min-w-screen">
-        <p className="z-10 text-white text-lg mr-2 bg-transparent">Hi, I am </p>
+      <div className="relative flex h-screen w-full items-center justify-center overflow-hidden  bg-background p-20   min-w-screen ">
+        <p className="z-10 text-white text-lg mr-2 bg-transparent w-1/2 text-end">Hi, I am </p>
         
-        <p className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-green-400 opacity-70 bg-transparent">
+        <p className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-green-400 opacity-70 bg-transparent w-1/2">
           
         <HyperText
       className="text-4xl font-bold w-6"

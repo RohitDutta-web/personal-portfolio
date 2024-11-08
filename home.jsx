@@ -1,6 +1,9 @@
 import Nav from "./src/components/navBar/nav"
 import { Banner } from "./src/components/banner/banner"
 import About from "./src/components/about/about"
+import Path from "./src/components/path/path"
+import Skills from "./src/components/skills/skills"
+
 
 
 export default function Home() {
@@ -9,7 +12,10 @@ export default function Home() {
       <div >
       <Nav />
         <Banner />
-        <About/>
+        <About />
+        <Path />
+        <Skills />
+     
       </div>
     </>
   )
