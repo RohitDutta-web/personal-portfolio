@@ -7,8 +7,27 @@ import Project_section from "../projects/project_section"
 
 import Contact from "../contact/contact"
 import { ScrollProvider } from "../../lib/context"
+import { useEffect, useState } from 'react';
+import Loading from '../loading/loading'
 
 export default function Home() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate data fetching or component loading
+    const loadData = async () => {
+      // Simulate a fetch call or any other async operation
+      await new Promise((resolve) => setTimeout(resolve, 2000)); // Replace with your actual data fetching logic
+      setLoading(false);
+    };
+
+    loadData();
+  }, []);
+
+  if (loading) {
+    return <Loading />; // Show loading screen while loading
+  }
   return (
     <>
       <ScrollProvider >
@@ -19,7 +38,6 @@ export default function Home() {
         <Skills />
         <Project_section />
         <Contact />
-
       </ScrollProvider>
     </>
   )
