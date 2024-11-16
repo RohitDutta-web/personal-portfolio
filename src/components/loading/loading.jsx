@@ -3,8 +3,8 @@ import "./loading.css"
 export default function Loading() {
   return (
     <>
-      <div className="max-w-screen w-full h-screen flex items-center justify-center">
-      <div className="w-1/2  h-auto">
+      <div className="max-w-screen  max-h-screen flex items-center justify-center">
+      <div className="w-1/3  h-1/3">
       <svg viewBox="0 0 100 100">
 	<g fill="none" stroke="rgb(74 222 128)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
 	
