@@ -5,10 +5,10 @@ import { FaGithub } from "react-icons/fa";
 export default function Project_card({project_name,url,img,git,link}) {
   return (
     <>
-      <div className="w-96 bg-white h-[248px] p-2 m-2 group  rounded-xl">
+      <div className="w-96 bg-white h-[248px] p-2 m-5 group  rounded-xl ">
         <Safari
           url={url}
-          className="size-full  hover:opacity-70 group-hover:opacity-70 rounded"
+          className="size-full  hover:opacity-70 group-hover:opacity-70 rounded "
           src={img}
         />
         <div className="invisible group rounded  group-hover:visible    relative bottom-20  font-bold mt-2 text-2xl w-full ">

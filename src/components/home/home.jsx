@@ -6,11 +6,12 @@ import Skills from "../skills/skills"
 import Project_section from "../projects/project_section"
 
 import Contact from "../contact/contact"
+import { ScrollProvider } from "../../lib/context"
 
 export default function Home() {
   return (
     <>
-      <div >
+      <ScrollProvider >
         <Nav />
         <Banner />
         <About />
@@ -19,7 +20,7 @@ export default function Home() {
         <Project_section />
         <Contact />
 
-      </div>
+      </ScrollProvider>
     </>
   )
 }
